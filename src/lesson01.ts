@@ -21,9 +21,9 @@ const greet2 = (name: string, suffix: string = "씨"): string => {
 console.log(greet2('sangHwa'))
 console.log(greet2('sangHwa', "Chung"))
 
-const user = { name: 'ivan', age: 26, city: 'Seoul'}
-const {name: userName, age: userAge, city} = user
-console.log(userName, userAge, city)
+// const user = { name: 'ivan', age: 26, city: 'Seoul'}
+// const {name: userName, age: userAge, city} = user
+// console.log(userName, userAge, city)
 
 const colors = ['red', 'green', 'blue']
 const [first, second, third] = colors

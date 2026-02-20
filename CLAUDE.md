@@ -99,4 +99,5 @@
 - [x] 커리큘럼 생성
 - [x] **Lesson 01** - JS/TS 핵심 문법 한판 정리
 - [x] **Lesson 02** - 함수와 클로저
-- [ ] **Lesson 03** - Interface & Type Alias ← 현재 위치
+- [x] **Lesson 03** - Interface & Type Alias
+- [ ] **Lesson 04** - Union, Literal, Narrowing ← 현재 위치
