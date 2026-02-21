@@ -111,4 +111,5 @@
 - [x] **Lesson 05** - 제네릭 (Generics)
 - [x] **Lesson 06** - 유틸리티 타입 & 고급 타입
 - [x] **Lesson 07** - Promise & async/await
-- [ ] **Lesson 08** - 모듈 & 클래스 ← 현재 위치
+- [x] **Lesson 08** - 모듈 & 클래스
+- [ ] **Lesson 09** - 실전 패턴 모음 ← 현재 위치

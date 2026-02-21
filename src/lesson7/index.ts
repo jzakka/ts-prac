@@ -171,7 +171,7 @@ function delay(ms: number): Promise<void> {
 async function fetchWithRetry(url: string, maxRetries: number = 3): Promise<any> {
     const result = await fetch(url).catch(err => {
         if (maxRetries == 1) {
-            return Promise.resolve({id: 1, name: 'Bob'});
+            return {id: 1, name: 'Bob'};
         }
         if (maxRetries > 0) {
             console.log(`Retrying... (${maxRetries} attempts left)`)
