@@ -109,4 +109,5 @@
 - [x] **Lesson 03** - Interface & Type Alias
 - [x] **Lesson 04** - Union, Literal, Narrowing
 - [x] **Lesson 05** - 제네릭 (Generics)
-- [ ] **Lesson 06** - 유틸리티 타입 & 고급 타입 ← 현재 위치
+- [x] **Lesson 06** - 유틸리티 타입 & 고급 타입
+- [ ] **Lesson 07** - Promise & async/await ← 현재 위치
