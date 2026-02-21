@@ -110,4 +110,5 @@
 - [x] **Lesson 04** - Union, Literal, Narrowing
 - [x] **Lesson 05** - 제네릭 (Generics)
 - [x] **Lesson 06** - 유틸리티 타입 & 고급 타입
-- [ ] **Lesson 07** - Promise & async/await ← 현재 위치
+- [x] **Lesson 07** - Promise & async/await
+- [ ] **Lesson 08** - 모듈 & 클래스 ← 현재 위치
