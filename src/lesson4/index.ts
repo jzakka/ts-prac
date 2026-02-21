@@ -1,3 +1,5 @@
+export {};
+
 type ID = string | number;
 
 function printID(id: ID) {
@@ -133,9 +135,46 @@ function getArea(shape: Shape): number {
             return shape.size ** 2;
         case 'rectangle':
             return shape.width * shape.height;
+        default:
+            const _exhaustive: never = shape;
+            return _exhaustive;
     }
 }
 
 console.log(getArea({ kind: 'circle', radius: 10 }))
 console.log(getArea({ kind: 'square', size: 5 }))
 console.log(getArea({ kind: 'rectangle', width: 4, height: 6 }))
+
+type RequestState = 
+    | { status: 'idle'}
+    | { status: 'loading' }
+    | { status: 'success'; data: User }
+    | { status: 'error'; error: string }
+
+type User = {
+    id: number;
+    name: string;
+    email: string;
+}
+
+function renderUI(request: RequestState) {
+    switch(request.status) {
+        case 'idle':
+            console.log('Click to fetch')
+            break;
+        case 'loading':
+            console.log('Loading...')
+            break;
+        case 'success':
+            console.log(`User: ${request.data.name} (${request.data.email})`)
+            break;
+        case 'error':
+            console.log('Error:', request.error)
+            break;
+    }
+}
+
+renderUI({ status: 'idle' });
+renderUI({ status: 'loading' });
+renderUI({ status: 'success', data: { id: 1, name: 'Alice', email: 'alice@example.com' } });
+renderUI({ status: 'error', error: 'Network failed' });
